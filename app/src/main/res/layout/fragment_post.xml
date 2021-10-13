@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.Post">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/windowBackground">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <Button
+                    android:id="@+id/addimage"
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/editprofilebtnbg"
+                    android:text="Add Image"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/postbtn"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/postbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/editprofilebtnbg"
+                    android:text="Post"
+                    android:textColor="#FFFFFF"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="120dp">
+
+            <ImageView
+                android:id="@+id/postimg"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittextbg"
+                android:contentDescription="TODO"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/uploadphotoundraw" />
+
+            <EditText
+                android:id="@+id/text"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittextbg"
+                android:ems="10"
+                android:fontFamily="@font/montserrat_semibold"
+                android:hint="Title"
+                android:padding="10dp"
+                android:textColor="#0B0A0A"
+                android:textColorHint="#5E5C5C"
+                android:textSize="30sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.507"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/choosethumbnailtext" />
+
+            <EditText
+                android:id="@+id/article"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittextbg"
+                android:ems="10"
+                android:fontFamily="@font/montserrat_medium"
+                android:hint="Article"
+                android:padding="10dp"
+                android:textColor="#0C0A0A"
+                android:textColorHint="#5E5C5C"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text" />
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="20dp"
+                app:layout_constraintGuide_percent="0.0" />
+
+
+            <ImageView
+                android:id="@+id/imageadded1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/article"
+                app:srcCompat="@drawable/imageic" />
+
+            <EditText
+                android:id="@+id/article1"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittextbg"
+                android:ems="10"
+                android:fontFamily="@font/montserrat_medium"
+                android:hint="Article"
+                android:padding="10dp"
+                android:textColor="#0B0909"
+                android:textColorHint="#5E5C5C"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageadded1" />
+
+            <ImageView
+                android:id="@+id/imageadded2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/article1"
+                app:srcCompat="@drawable/imageic" />
+
+            <EditText
+                android:id="@+id/article2"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edittextbg"
+                android:ems="10"
+                android:fontFamily="@font/montserrat_medium"
+                android:hint="Article"
+                android:padding="10dp"
+                android:textColor="#0B0909"
+                android:textColorHint="#5E5C5C"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageadded2" />
+
+            <ImageView
+                android:id="@+id/imageadded3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/article2"
+                app:srcCompat="@drawable/imageic" />
+
+            <EditText
+                android:id="@+id/article3"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:background="@drawable/edittextbg"
+                android:padding="10dp"
+                android:textColor="#0B0909"
+                android:fontFamily="@font/montserrat_medium"
+                android:textSize="20sp"
+                android:hint="Article"
+                android:textColorHint="#5E5C5C"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageadded3" />
+
+            <ImageView
+                android:id="@+id/imageadded4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/article3"
+                app:srcCompat="@drawable/imageic" />
+
+            <EditText
+                android:id="@+id/article4"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Article"
+                android:background="@drawable/edittextbg"
+                android:padding="10dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:textColor="#0B0909"
+                android:textColorHint="#5E5C5C"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageadded4" />
+
+            <ImageView
+                android:id="@+id/imageadded5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/article4"
+                app:srcCompat="@drawable/imageic" />
+
+            <EditText
+                android:id="@+id/article5"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Article"
+                android:fontFamily="@font/montserrat_medium"
+                android:background="@drawable/edittextbg"
+                android:padding="10dp"
+                android:textColor="#0B0909"
+                android:textColorHint="#5E5C5C"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageadded5" />
+
+            <ImageView
+                android:id="@+id/imageadded6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/article5"
+                app:srcCompat="@drawable/imageic" />
+
+            <EditText
+                android:id="@+id/article6"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Article"
+                android:textColorHint="#5E5C5C"
+                android:fontFamily="@font/montserrat_medium"
+                android:background="@drawable/edittextbg"
+                android:padding="10dp"
+                android:textColor="#0B0909"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageadded6" />
+
+            <ImageView
+                android:id="@+id/imageadded7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/article6"
+                app:srcCompat="@drawable/imageic" />
+
+            <EditText
+                android:id="@+id/article7"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Article"
+                android:fontFamily="@font/montserrat_medium"
+                android:background="@drawable/edittextbg"
+                android:textColorHint="#5E5C5C"
+                android:padding="10dp"
+                android:textColor="#0B0909"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageadded7" />
+
+            <ImageView
+                android:id="@+id/imageadded8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/article7"
+                app:srcCompat="@drawable/imageic" />
+
+            <EditText
+                android:id="@+id/article8"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Article"
+                android:fontFamily="@font/montserrat_medium"
+                android:background="@drawable/edittextbg"
+                android:padding="10dp"
+                android:textColorHint="#5E5C5C"
+                android:textColor="#0B0909"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageadded8" />
+
+            <ImageView
+                android:id="@+id/imageadded9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/article8"
+                app:srcCompat="@drawable/imageic" />
+
+            <EditText
+                android:id="@+id/article9"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Article"
+                android:fontFamily="@font/montserrat_medium"
+                android:background="@drawable/edittextbg"
+                android:padding="10dp"
+                android:textColorHint="#5E5C5C"
+                android:textColor="#0B0909"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageadded9" />
+
+            <ImageView
+                android:id="@+id/imageadded10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/article9"
+                app:srcCompat="@drawable/imageic" />
+
+            <EditText
+                android:id="@+id/article10"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Article"
+                android:fontFamily="@font/montserrat_medium"
+                android:background="@drawable/edittextbg"
+                android:padding="10dp"
+                android:textColor="#0B0909"
+                android:textColorHint="#5E5C5C"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageadded10" />
+
+            <TextView
+                android:id="@+id/choosethumbnailtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Choose Thumbnail"
+                android:textColor="#045B83"
+                android:textSize="22sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/postimg" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

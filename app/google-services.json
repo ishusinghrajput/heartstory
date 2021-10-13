@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1058663921578",
+    "firebase_url": "https://heartstory-41d05.firebaseio.com",
+    "project_id": "heartstory-41d05",
+    "storage_bucket": "heartstory-41d05.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1058663921578:android:e106fec4547bfef98addd3",
+        "android_client_info": {
+          "package_name": "com.photo.heartstory"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1058663921578-8irffiq4pvakqudkfmp8ag05fore0pt8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhNh_vyk3w4lL7Az9ZVHdn4QqQ_esv6_I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1058663921578-8irffiq4pvakqudkfmp8ag05fore0pt8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

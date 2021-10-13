@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.photo.heartstory">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Withdraw"
+            android:exported="true" />
+        <activity android:name=".Terms" />
+        <activity android:name=".PrivacyPolicy" />
+        <activity android:name=".About" />
+        <activity android:name=".Monetization" />
+        <activity android:name=".Changeemail" />
+        <activity android:name=".Comment" />
+        <activity android:name=".Editprofile" />
+        <activity android:name=".Fullimage" />
+        <activity android:name=".Fullarticle"
+            android:hardwareAccelerated="true"/>
+        <activity
+            android:name=".ui.home.HomeFragment$postitem"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".Followers" />
+        <activity
+            android:name=".Bottom"
+            android:label="@string/title_activity_bottom"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".Profile" />
+        <activity android:name=".Checkreset" />
+        <activity android:name=".Resetpassword" />
+        <activity
+            android:name=".Signup"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Verification"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Splashscreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <meta-data
+            android:name= "com.google.android.gms.ads.APPLICATION_ID"
+            android:value= "ca-app-pub-3940256099942544~3347511713"/>
+
+    </application>
+
+</manifest>
